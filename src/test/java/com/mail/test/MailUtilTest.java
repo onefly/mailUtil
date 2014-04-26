@@ -3,10 +3,15 @@ package com.mail.test;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+
 import javax.mail.MessagingException;
-import org.apache.log4j.Logger;
+
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.common.util.mail.MailUtil;
+
 import freemarker.template.TemplateException;
 
 /**
@@ -18,7 +23,7 @@ import freemarker.template.TemplateException;
  * @project mailUtil
  */
 public class MailUtilTest {
-	private static Logger log = Logger.getLogger(MailUtilTest.class);
+	private static Logger log = LoggerFactory.getLogger(MailUtilTest.class);
 
 	@Test
 	public void testMailTemplate() {

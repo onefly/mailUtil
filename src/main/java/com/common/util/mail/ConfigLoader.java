@@ -4,7 +4,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.mail.test.MailUtilTest;
 
 /**
  * 邮件发送配置信息加载类
@@ -16,7 +19,7 @@ import org.apache.log4j.Logger;
  */
 public class ConfigLoader {
 	//日志记录对象
-	private static Logger log = Logger.getLogger(ConfigLoader.class);
+	private static Logger log = LoggerFactory.getLogger(MailUtilTest.class);
 	// 配置文件路径
 	private static String mailPath = "mail/mail.properties";
 	// 邮件发送SMTP主机

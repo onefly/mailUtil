@@ -9,7 +9,10 @@ import java.io.Writer;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.mail.test.MailUtilTest;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -25,7 +28,7 @@ import freemarker.template.TemplateException;
  */
 public class TemplateFactory {
 	// 日志记录对象
-	private static Logger log = Logger.getLogger(ConfigLoader.class);
+	private static Logger log = LoggerFactory.getLogger(MailUtilTest.class);
 	// 模板文件路径
 	private static String templatePath = "/template";
 	// 模板文件内容编码

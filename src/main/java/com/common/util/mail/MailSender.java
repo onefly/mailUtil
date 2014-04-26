@@ -18,7 +18,11 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import javax.mail.internet.MimeUtility;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.mail.test.MailUtilTest;
+
 
 /**
  * 邮件发送实现类
@@ -36,7 +40,7 @@ public class MailSender {
 	private String username;// 发件人的用户名
 	private String password;// 发件人的密码
 	private String nickname;// 发件人的昵称
-	protected static Logger log = Logger.getLogger(MailSender.class);
+	private static Logger log = LoggerFactory.getLogger(MailUtilTest.class);
 
 	/**
 	 * 有参构造器

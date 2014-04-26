@@ -1,0 +1,513 @@
+2014-04-26  17:03:22.018 [main] DEBUG com.mail.test.MailUtilTest - load mail setting success,file path:mail/mail.properties
+2014-04-26  17:03:22.033 [main] DEBUG com.mail.test.MailUtilTest - set system properties success ：mail.smtp.host= smtp.sina.com
+2014-04-26  17:03:22.114 [main] DEBUG com.mail.test.MailUtilTest -  create session and mimeMessage success
+2014-04-26  17:03:22.114 [main] DEBUG com.mail.test.MailUtilTest - set smtp auth success：mail.smtp.auth= true
+2014-04-26  17:03:22.374 [main] DEBUG com.mail.test.MailUtilTest - the template is not found  in the map,template name :template_1.ftl
+2014-04-26  17:03:22.395 [main] DEBUG com.mail.test.MailUtilTest - set mail subject success, subject= test
+2014-04-26  17:03:22.398 [main] DEBUG com.mail.test.MailUtilTest - set mail body content success,mailBody= <h1>test</h1>模板1内容
+2014-04-26  17:03:22.401 [main] DEBUG com.mail.test.MailUtilTest - set mail receiver success,receiver = 529352479@qq.com
+2014-04-26  17:03:22.403 [main] DEBUG com.mail.test.MailUtilTest -  set mail sender and nickname success , sender= cao_zhifei@sina.com,nickname==?utf-8?B?56e76IGU5L2w5rGH?=
+2014-04-26  17:03:22.643 [main] ERROR com.mail.test.MailUtilTest - javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:295) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.4.7.jar:1.4.7]
+	at com.common.util.mail.MailSender.sendout(MailSender.java:242) ~[classes/:na]
+	at com.common.util.mail.MailUtil.sendMailByTemplate(MailUtil.java:54) ~[classes/:na]
+	at com.mail.test.MailUtilTest.testMailTemplate(MailUtilTest.java:34) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_45]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+2014-04-26  17:08:55.154 [main] DEBUG com.mail.test.MailUtilTest - load mail setting success,file path:mail/mail.properties
+2014-04-26  17:08:55.169 [main] DEBUG com.mail.test.MailUtilTest - set system properties success ：mail.smtp.host= smtp.sina.com
+2014-04-26  17:08:55.241 [main] DEBUG com.mail.test.MailUtilTest -  create session and mimeMessage success
+2014-04-26  17:08:55.241 [main] DEBUG com.mail.test.MailUtilTest - set smtp auth success：mail.smtp.auth= true
+2014-04-26  17:08:55.241 [main] DEBUG com.mail.test.MailUtilTest - set mail subject success, subject= test
+2014-04-26  17:08:55.244 [main] DEBUG com.mail.test.MailUtilTest - set mail body content success,mailBody= 普通邮件
+2014-04-26  17:08:55.248 [main] DEBUG com.mail.test.MailUtilTest - set mail receiver success,receiver = 529352479@qq.com
+2014-04-26  17:08:55.249 [main] DEBUG com.mail.test.MailUtilTest -  set mail sender and nickname success , sender= cao_zhifei@sina.com,nickname==?utf-8?B?56e76IGU5L2w5rGH?=
+2014-04-26  17:08:56.545 [main] ERROR com.mail.test.MailUtilTest - javax.mail.AuthenticationFailedException: 535 #5.7.0 Authentication failed
+
+javax.mail.AuthenticationFailedException: 535 #5.7.0 Authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:295) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.4.7.jar:1.4.7]
+	at com.common.util.mail.MailSender.sendout(MailSender.java:242) ~[classes/:na]
+	at com.common.util.mail.MailUtil.sendMail(MailUtil.java:128) ~[classes/:na]
+	at com.mail.test.MailUtilTest.testMail(MailUtilTest.java:48) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_45]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+2014-04-26  17:08:56.547 [main] DEBUG com.mail.test.MailUtilTest - set system properties success ：mail.smtp.host= smtp.sina.com
+2014-04-26  17:08:56.548 [main] DEBUG com.mail.test.MailUtilTest -  create session and mimeMessage success
+2014-04-26  17:08:56.548 [main] DEBUG com.mail.test.MailUtilTest - set smtp auth success：mail.smtp.auth= true
+2014-04-26  17:08:56.841 [main] DEBUG com.mail.test.MailUtilTest - the template is not found  in the map,template name :template_1.ftl
+2014-04-26  17:08:56.867 [main] DEBUG com.mail.test.MailUtilTest - set mail subject success, subject= test
+2014-04-26  17:08:56.867 [main] DEBUG com.mail.test.MailUtilTest - set mail body content success,mailBody= <h1>test</h1>模板1内容
+2014-04-26  17:08:56.867 [main] DEBUG com.mail.test.MailUtilTest - set mail receiver success,receiver = 529352479@qq.com
+2014-04-26  17:08:56.868 [main] DEBUG com.mail.test.MailUtilTest -  set mail sender and nickname success , sender= cao_zhifei@sina.com,nickname==?utf-8?B?56e76IGU5L2w5rGH?=
+2014-04-26  17:09:00.234 [main] ERROR com.mail.test.MailUtilTest - javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:295) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.4.7.jar:1.4.7]
+	at com.common.util.mail.MailSender.sendout(MailSender.java:242) ~[classes/:na]
+	at com.common.util.mail.MailUtil.sendMailByTemplate(MailUtil.java:54) ~[classes/:na]
+	at com.mail.test.MailUtilTest.testMailTemplate(MailUtilTest.java:34) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_45]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+2014-04-26  17:09:00.235 [main] DEBUG com.mail.test.MailUtilTest - set system properties success ：mail.smtp.host= smtp.sina.com
+2014-04-26  17:09:00.235 [main] DEBUG com.mail.test.MailUtilTest -  create session and mimeMessage success
+2014-04-26  17:09:00.236 [main] DEBUG com.mail.test.MailUtilTest - set smtp auth success：mail.smtp.auth= true
+2014-04-26  17:09:00.236 [main] DEBUG com.mail.test.MailUtilTest - set mail subject success, subject= test
+2014-04-26  17:09:00.236 [main] DEBUG com.mail.test.MailUtilTest - set mail body content success,mailBody= d:/data.zip
+2014-04-26  17:09:00.241 [main] DEBUG com.mail.test.MailUtilTest - mail add file success,filename= 普通邮件
+2014-04-26  17:09:00.242 [main] DEBUG com.mail.test.MailUtilTest - set mail receiver success,receiver = 529352479@qq.com
+2014-04-26  17:09:00.242 [main] DEBUG com.mail.test.MailUtilTest -  set mail sender and nickname success , sender= cao_zhifei@sina.com,nickname==?utf-8?B?56e76IGU5L2w5rGH?=
+2014-04-26  17:09:00.396 [main] ERROR com.mail.test.MailUtilTest - javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:295) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.4.7.jar:1.4.7]
+	at com.common.util.mail.MailSender.sendout(MailSender.java:242) ~[classes/:na]
+	at com.common.util.mail.MailUtil.sendMailAndFile(MailUtil.java:166) ~[classes/:na]
+	at com.mail.test.MailUtilTest.testMailAndFile(MailUtilTest.java:60) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_45]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+[DEBUG] 2014-04-26  17:10:58.338 [main] com.mail.test.MailUtilTest - load mail setting success,file path:mail/mail.properties
+[DEBUG] 2014-04-26  17:10:58.353 [main] com.mail.test.MailUtilTest - set system properties success ：mail.smtp.host= smtp.sina.com
+[DEBUG] 2014-04-26  17:10:58.424 [main] com.mail.test.MailUtilTest -  create session and mimeMessage success
+[DEBUG] 2014-04-26  17:10:58.425 [main] com.mail.test.MailUtilTest - set smtp auth success：mail.smtp.auth= true
+[DEBUG] 2014-04-26  17:10:58.668 [main] com.mail.test.MailUtilTest - the template is not found  in the map,template name :template_1.ftl
+[DEBUG] 2014-04-26  17:10:58.688 [main] com.mail.test.MailUtilTest - set mail subject success, subject= test
+[DEBUG] 2014-04-26  17:10:58.692 [main] com.mail.test.MailUtilTest - set mail body content success,mailBody= <h1>test</h1>模板1内容
+[DEBUG] 2014-04-26  17:10:58.696 [main] com.mail.test.MailUtilTest - set mail receiver success,receiver = 529352479@qq.com
+[DEBUG] 2014-04-26  17:10:58.697 [main] com.mail.test.MailUtilTest -  set mail sender and nickname success , sender= cao_zhifei@sina.com,nickname==?utf-8?B?56e76IGU5L2w5rGH?=
+[ERROR] 2014-04-26  17:10:58.872 [main] com.mail.test.MailUtilTest - javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:295) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.4.7.jar:1.4.7]
+	at com.common.util.mail.MailSender.sendout(MailSender.java:242) ~[classes/:na]
+	at com.common.util.mail.MailUtil.sendMailByTemplate(MailUtil.java:54) ~[classes/:na]
+	at com.mail.test.MailUtilTest.testMailTemplate(MailUtilTest.java:34) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_45]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+[DEBUG] 2014-04-26  17:12:23.997 [main] com.mail.test.MailUtilTest - load mail setting success,file path:mail/mail.properties
+[DEBUG] 2014-04-26  17:12:24.012 [main] com.mail.test.MailUtilTest - set system properties success ：mail.smtp.host= smtp.sina.com
+[DEBUG] 2014-04-26  17:12:24.083 [main] com.mail.test.MailUtilTest -  create session and mimeMessage success
+[DEBUG] 2014-04-26  17:12:24.083 [main] com.mail.test.MailUtilTest - set smtp auth success：mail.smtp.auth= true
+[DEBUG] 2014-04-26  17:12:24.383 [main] com.mail.test.MailUtilTest - the template is not found  in the map,template name :template_1.ftl
+[DEBUG] 2014-04-26  17:12:24.402 [main] com.mail.test.MailUtilTest - set mail subject success, subject= test
+[DEBUG] 2014-04-26  17:12:24.405 [main] com.mail.test.MailUtilTest - set mail body content success,mailBody= <h1>test</h1>模板1内容
+[DEBUG] 2014-04-26  17:12:24.409 [main] com.mail.test.MailUtilTest - set mail receiver success,receiver = 529352479@qq.com
+[DEBUG] 2014-04-26  17:12:24.410 [main] com.mail.test.MailUtilTest -  set mail sender and nickname success , sender= cao_zhifei@sina.com,nickname==?utf-8?B?56e76IGU5L2w5rGH?=
+[ERROR] 2014-04-26  17:12:24.836 [main] com.mail.test.MailUtilTest - javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:295) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.4.7.jar:1.4.7]
+	at com.common.util.mail.MailSender.sendout(MailSender.java:242) ~[classes/:na]
+	at com.common.util.mail.MailUtil.sendMailByTemplate(MailUtil.java:54) ~[classes/:na]
+	at com.mail.test.MailUtilTest.testMailTemplate(MailUtilTest.java:34) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_45]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+[DEBUG] 2014-04-26  17:12:24.840 [main] com.mail.test.MailUtilTest - set system properties success ：mail.smtp.host= smtp.sina.com
+[DEBUG] 2014-04-26  17:12:24.841 [main] com.mail.test.MailUtilTest -  create session and mimeMessage success
+[DEBUG] 2014-04-26  17:12:24.841 [main] com.mail.test.MailUtilTest - set smtp auth success：mail.smtp.auth= true
+[DEBUG] 2014-04-26  17:12:24.842 [main] com.mail.test.MailUtilTest - set mail subject success, subject= test
+[DEBUG] 2014-04-26  17:12:24.842 [main] com.mail.test.MailUtilTest - set mail body content success,mailBody= d:/data.zip
+[DEBUG] 2014-04-26  17:12:24.862 [main] com.mail.test.MailUtilTest - mail add file success,filename= 普通邮件
+[DEBUG] 2014-04-26  17:12:24.863 [main] com.mail.test.MailUtilTest - set mail receiver success,receiver = 529352479@qq.com
+[DEBUG] 2014-04-26  17:12:24.863 [main] com.mail.test.MailUtilTest -  set mail sender and nickname success , sender= cao_zhifei@sina.com,nickname==?utf-8?B?56e76IGU5L2w5rGH?=
+[ERROR] 2014-04-26  17:12:25.979 [main] com.mail.test.MailUtilTest - javax.mail.AuthenticationFailedException: 535 #5.7.0 Authentication failed
+
+javax.mail.AuthenticationFailedException: 535 #5.7.0 Authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:295) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.4.7.jar:1.4.7]
+	at com.common.util.mail.MailSender.sendout(MailSender.java:242) ~[classes/:na]
+	at com.common.util.mail.MailUtil.sendMailAndFile(MailUtil.java:166) ~[classes/:na]
+	at com.mail.test.MailUtilTest.testMailAndFile(MailUtilTest.java:60) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_45]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+[DEBUG] 2014-04-26  17:12:25.982 [main] com.mail.test.MailUtilTest - set system properties success ：mail.smtp.host= smtp.sina.com
+[DEBUG] 2014-04-26  17:12:25.983 [main] com.mail.test.MailUtilTest -  create session and mimeMessage success
+[DEBUG] 2014-04-26  17:12:25.984 [main] com.mail.test.MailUtilTest - set smtp auth success：mail.smtp.auth= true
+[DEBUG] 2014-04-26  17:12:25.984 [main] com.mail.test.MailUtilTest - set mail subject success, subject= test
+[DEBUG] 2014-04-26  17:12:25.984 [main] com.mail.test.MailUtilTest - set mail body content success,mailBody= 普通邮件
+[DEBUG] 2014-04-26  17:12:25.985 [main] com.mail.test.MailUtilTest - set mail receiver success,receiver = 529352479@qq.com
+[DEBUG] 2014-04-26  17:12:25.986 [main] com.mail.test.MailUtilTest -  set mail sender and nickname success , sender= cao_zhifei@sina.com,nickname==?utf-8?B?56e76IGU5L2w5rGH?=
+[ERROR] 2014-04-26  17:12:27.131 [main] com.mail.test.MailUtilTest - javax.mail.AuthenticationFailedException: 535 #5.7.0 Authentication failed
+
+javax.mail.AuthenticationFailedException: 535 #5.7.0 Authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:295) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.4.7.jar:1.4.7]
+	at com.common.util.mail.MailSender.sendout(MailSender.java:242) ~[classes/:na]
+	at com.common.util.mail.MailUtil.sendMail(MailUtil.java:128) ~[classes/:na]
+	at com.mail.test.MailUtilTest.testMail(MailUtilTest.java:48) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_45]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+[DEBUG] 2014-04-26  17:13:13.168 [main] com.mail.test.MailUtilTest - load mail setting success,file path:mail/mail.properties
+[DEBUG] 2014-04-26  17:13:13.184 [main] com.mail.test.MailUtilTest - set system properties success ：mail.smtp.host= smtp.sina.com
+[DEBUG] 2014-04-26  17:13:13.265 [main] com.mail.test.MailUtilTest -  create session and mimeMessage success
+[DEBUG] 2014-04-26  17:13:13.266 [main] com.mail.test.MailUtilTest - set smtp auth success：mail.smtp.auth= true
+[DEBUG] 2014-04-26  17:13:13.490 [main] com.mail.test.MailUtilTest - the template is not found  in the map,template name :template_1.ftl
+[DEBUG] 2014-04-26  17:13:13.510 [main] com.mail.test.MailUtilTest - set mail subject success, subject= test
+[DEBUG] 2014-04-26  17:13:13.513 [main] com.mail.test.MailUtilTest - set mail body content success,mailBody= <h1>test</h1>模板1内容
+[DEBUG] 2014-04-26  17:13:13.517 [main] com.mail.test.MailUtilTest - set mail receiver success,receiver = 529352479@qq.com
+[DEBUG] 2014-04-26  17:13:13.518 [main] com.mail.test.MailUtilTest -  set mail sender and nickname success , sender= cao_zhifei@sina.com,nickname==?utf-8?B?56e76IGU5L2w5rGH?=
+[ERROR] 2014-04-26  17:13:14.944 [main] com.mail.test.MailUtilTest - javax.mail.AuthenticationFailedException: 535 #5.7.0 Authentication failed
+
+javax.mail.AuthenticationFailedException: 535 #5.7.0 Authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:295) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.4.7.jar:1.4.7]
+	at com.common.util.mail.MailSender.sendout(MailSender.java:242) ~[classes/:na]
+	at com.common.util.mail.MailUtil.sendMailByTemplate(MailUtil.java:54) ~[classes/:na]
+	at com.mail.test.MailUtilTest.testMailTemplate(MailUtilTest.java:34) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_45]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+[ERROR] 2014-04-26  17:14:17.692 [main] com.mail.test.MailUtilTest - javax.mail.AuthenticationFailedException: 535 #5.7.0 Authentication failed
+
+javax.mail.AuthenticationFailedException: 535 #5.7.0 Authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:295) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.4.7.jar:1.4.7]
+	at com.common.util.mail.MailSender.sendout(MailSender.java:242) ~[classes/:na]
+	at com.common.util.mail.MailUtil.sendMailByTemplate(MailUtil.java:54) ~[classes/:na]
+	at com.mail.test.MailUtilTest.testMailTemplate(MailUtilTest.java:34) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_45]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+[DEBUG] 2014-04-26  17:16:10.210 [main] com.mail.test.MailUtilTest - load mail setting success,file path:mail/mail.properties
+[DEBUG] 2014-04-26  17:16:10.210 [main] com.mail.test.MailUtilTest - load mail setting success,file path:mail/mail.properties
+[DEBUG] 2014-04-26  17:16:10.227 [main] com.mail.test.MailUtilTest - set system properties success ：mail.smtp.host= smtp.sina.com
+[DEBUG] 2014-04-26  17:16:10.227 [main] com.mail.test.MailUtilTest - set system properties success ：mail.smtp.host= smtp.sina.com
+[DEBUG] 2014-04-26  17:16:10.303 [main] com.mail.test.MailUtilTest -  create session and mimeMessage success
+[DEBUG] 2014-04-26  17:16:10.303 [main] com.mail.test.MailUtilTest -  create session and mimeMessage success
+[DEBUG] 2014-04-26  17:16:10.304 [main] com.mail.test.MailUtilTest - set smtp auth success：mail.smtp.auth= true
+[DEBUG] 2014-04-26  17:16:10.304 [main] com.mail.test.MailUtilTest - set smtp auth success：mail.smtp.auth= true
+[DEBUG] 2014-04-26  17:16:10.536 [main] com.mail.test.MailUtilTest - the template is not found  in the map,template name :template_1.ftl
+[DEBUG] 2014-04-26  17:16:10.536 [main] com.mail.test.MailUtilTest - the template is not found  in the map,template name :template_1.ftl
+[DEBUG] 2014-04-26  17:16:10.556 [main] com.mail.test.MailUtilTest - set mail subject success, subject= test
+[DEBUG] 2014-04-26  17:16:10.556 [main] com.mail.test.MailUtilTest - set mail subject success, subject= test
+[DEBUG] 2014-04-26  17:16:10.559 [main] com.mail.test.MailUtilTest - set mail body content success,mailBody= <h1>test</h1>模板1内容
+[DEBUG] 2014-04-26  17:16:10.559 [main] com.mail.test.MailUtilTest - set mail body content success,mailBody= <h1>test</h1>模板1内容
+[DEBUG] 2014-04-26  17:16:10.563 [main] com.mail.test.MailUtilTest - set mail receiver success,receiver = 529352479@qq.com
+[DEBUG] 2014-04-26  17:16:10.563 [main] com.mail.test.MailUtilTest - set mail receiver success,receiver = 529352479@qq.com
+[DEBUG] 2014-04-26  17:16:10.564 [main] com.mail.test.MailUtilTest -  set mail sender and nickname success , sender= cao_zhifei@sina.com,nickname==?utf-8?B?56e76IGU5L2w5rGH?=
+[DEBUG] 2014-04-26  17:16:10.564 [main] com.mail.test.MailUtilTest -  set mail sender and nickname success , sender= cao_zhifei@sina.com,nickname==?utf-8?B?56e76IGU5L2w5rGH?=
+[ERROR] 2014-04-26  17:16:10.864 [main] com.mail.test.MailUtilTest - javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:295) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.4.7.jar:1.4.7]
+	at com.common.util.mail.MailSender.sendout(MailSender.java:242) ~[classes/:na]
+	at com.common.util.mail.MailUtil.sendMailByTemplate(MailUtil.java:54) ~[classes/:na]
+	at com.mail.test.MailUtilTest.testMailTemplate(MailUtilTest.java:34) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_45]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+[ERROR] 2014-04-26  17:16:10.864 [main] com.mail.test.MailUtilTest - javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.4.7.jar:1.4.7]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:295) ~[mail-1.4.7.jar:1.4.7]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.4.7.jar:1.4.7]
+	at com.common.util.mail.MailSender.sendout(MailSender.java:242) ~[classes/:na]
+	at com.common.util.mail.MailUtil.sendMailByTemplate(MailUtil.java:54) ~[classes/:na]
+	at com.mail.test.MailUtilTest.testMailTemplate(MailUtilTest.java:34) ~[test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_45]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45) [junit-4.10.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.10.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42) [junit-4.10.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68) [junit-4.10.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222) [junit-4.10.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300) [junit-4.10.jar:na]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
