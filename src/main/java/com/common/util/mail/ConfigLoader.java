@@ -3,11 +3,8 @@ package com.common.util.mail;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.mail.test.MailUtilTest;
 
 /**
  * 邮件发送配置信息加载类

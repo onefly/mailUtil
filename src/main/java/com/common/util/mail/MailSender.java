@@ -17,12 +17,8 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import javax.mail.internet.MimeUtility;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.mail.test.MailUtilTest;
-
 
 /**
  * 邮件发送实现类
