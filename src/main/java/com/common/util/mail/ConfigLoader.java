@@ -19,7 +19,7 @@ import com.mail.test.MailUtilTest;
  */
 public class ConfigLoader {
 	//日志记录对象
-	private static Logger log = LoggerFactory.getLogger(MailUtilTest.class);
+	private static Logger log = LoggerFactory.getLogger(ConfigLoader.class);
 	// 配置文件路径
 	private static String mailPath = "mail/mail.properties";
 	// 邮件发送SMTP主机

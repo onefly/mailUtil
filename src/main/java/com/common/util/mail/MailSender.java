@@ -40,7 +40,7 @@ public class MailSender {
 	private String username;// 发件人的用户名
 	private String password;// 发件人的密码
 	private String nickname;// 发件人的昵称
-	private static Logger log = LoggerFactory.getLogger(MailUtilTest.class);
+	private static Logger log = LoggerFactory.getLogger(MailSender.class);
 
 	/**
 	 * 有参构造器
