@@ -249,7 +249,7 @@ public class MailSender {
 	 * @Date:2014年4月26日 上午10:50:12
 	 * @author 曹志飞
 	 * @param username
-	 *            发件人有限登录用户名
+	 *            发件人邮箱登录用户名
 	 * @param password
 	 *            发件人邮箱密码
 	 * @param nickname
