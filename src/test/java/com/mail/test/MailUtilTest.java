@@ -31,7 +31,7 @@ public class MailUtilTest {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("content", "test");
 		try {
-			MailUtil.sendMailByTemplate("529352479@qq.com", "test", map,
+			MailUtil.sendMailByTemplate("52935247955@qq.com", "test", map,
 					templateName);
 		} catch (IOException e) {
 			log.error(e.toString(), e);
@@ -45,7 +45,7 @@ public class MailUtilTest {
 	@Test
 	public void testMail() {
 		try {
-			MailUtil.sendMail("529352479@qq.com", "test", "普通邮件");
+			MailUtil.sendMail("52935247955@qq.com", "test", "普通邮件");
 		} catch (IOException e) {
 			log.error(e.toString(), e);
 		} catch (MessagingException e) {
@@ -56,9 +56,9 @@ public class MailUtilTest {
 	@Test
 	public void testMailAndFile() {
 		try {
-			String filePath = "d:/data.zip";
-			MailUtil.sendMailAndFile("529352479@qq.com", "test", "普通邮件",
-					filePath);
+			String filePath = "D:/dat.txt";
+			MailUtil.sendMailAndFile("52935247955@qq.com", "test", filePath,
+					"ted");
 		} catch (IOException e) {
 			log.error(e.toString(), e);
 		} catch (MessagingException e) {
